@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Contactus from "./pages/Contactus.jsx";
+import CompanyRegistration from "./pages/CompanyRegistration.jsx";
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
       {
         path:"contact-us",
         element: <Contactus />,
-      }
+      },
+      {
+        path:"register-company",
+        element: <CompanyRegistration />,
+      },
       
     ],
   },
