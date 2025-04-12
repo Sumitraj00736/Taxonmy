@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import Header from './components/layout/Header'
-import Footer from './components/layout/Footer'
-import { Outlet } from 'react-router-dom'
-import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import { Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,9 @@ function App() {
       ) : (
         <>
           <Header />
-          <Outlet />
+          <main className="pt-[90px]">
+            <Outlet />
+          </main>
           <Footer />
         </>
       )}

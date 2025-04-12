@@ -6,7 +6,6 @@ function HeroSlider() {
     { id: 1, icon: "assets/hero1.jpg" },
     { id: 2, icon: "assets/hero2.jpg" },
     { id: 3, icon: "assets/hero3.jpg" },
-   
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -59,7 +58,7 @@ function HeroSlider() {
         </div>
       ) : (
         <div className="w-full max-w-7xl relative overflow-hidden h-full">
-          <div className="flex   justify-center items-center w-full h-full relative">
+          <div className="flex justify-center items-center w-full h-full relative">
             {slides.map((slide, index) => {
               const position =
                 (index - currentSlide + slides.length) % slides.length;
@@ -87,7 +86,7 @@ function HeroSlider() {
                   <img
                     src={slide.icon}
                     alt={`Slider ${slide.id}`}
-                    className="w-[95%] md:w-full h-[90%] md:h-full max-w-[800px]  object-cover shadow-lg"
+                    className="w-[95%] md:w-full h-[90%] md:h-full max-w-[800px] object-cover shadow-lg"
                   />
                 </div>
               );
@@ -95,14 +94,14 @@ function HeroSlider() {
           </div>
 
           {/* Dots */}
-          <div className="absolute bottom-[1px] md:bottom-6  w-full flex justify-center gap-2 md:gap-3 items-center z-10">
+          <div className="absolute bottom-2 md:bottom-6 w-full flex justify-center gap-2 md:gap-3 items-center z-10">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-2 md:w-3 md:h-3 transition-all duration-300 ease-in-out border border-gray-700 ${
+                className={`w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 transition-all duration-300 ease-in-out border border-gray-700 ${
                   currentSlide === index
-                    ? "bg-white scale-150 w-10 rounded-xl shadow-lg"
+                    ? "bg-white scale-150 w-6 sm:w-8 md:w-10 rounded-xl shadow-lg"
                     : "bg-gray-500 rounded-full"
                 }`}
               />
