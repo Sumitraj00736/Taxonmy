@@ -37,7 +37,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-Secondary p-4 shadow-sm fixed top-0 w-full bg-Secondary">
+    <header className="bg-Secondary p-4 shadow-sm fixed top-0 w-full bg-Secondary z-50">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" onClick={closeMenu}>
           <img
