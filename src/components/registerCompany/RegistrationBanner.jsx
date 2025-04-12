@@ -1,6 +1,6 @@
 import React from 'react'
 
-const registrationBanner = () => {
+const RegistrationBanner = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-white p-6 md:p-12">
     {/* Left Section */}
@@ -38,4 +38,4 @@ const registrationBanner = () => {
   )
 }
 
-export default registrationBanner
+export default RegistrationBanner
