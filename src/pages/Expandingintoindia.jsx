@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import ExpandingIntoIndiaBanner from '../components/ExpandingIndia/ExpandingIntoIndiaBanner'
-import ExpandingIndiaPricing from '../components/expandingIndia/ExpandingIndiaPricing'
+import ExpandingIntoIndiaBanner from '../components/expandingIndia/ExpandingIntoIndiaBanner.jsx'
+import ExpandingIndiaPricing from '../components/expandingIndia/ExpandingIndiaPricing.jsx'
 
 const Expandingintoindia = () => {
    useEffect(() => {
