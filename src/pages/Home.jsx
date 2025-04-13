@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroBanner from '../components/specific/HeroBanner'
-import TaxPrepHero from '../components/specific/TaxPrepHero'
-import PricingSection from '../components/specific/PricingSection'
-import BlogCard from '../components/specific/BlogCard'
+import HeroBanner from '../components/specific/HeroBanner.jsx'
+import TaxPrepHero from '../components/specific/TaxPrepHero.jsx'
+import PricingSection from '../components/specific/PricingSection.jsx'
+import BlogCard from '../components/specific/BlogCard.jsx'
 
 const Home = () => {
   return (

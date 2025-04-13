@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import VirtualOfficeBanner from '../components/virtualOffice/VirtualOfficeBanner'
-import SatisfactionSection from '../components/virtualOffice/SatisfactionSection'
-import VirtualOfficePricing from '../components/virtualOffice/VirtualOfficePricing'
+import VirtualOfficeBanner from '../components/virtualOffice/VirtualOfficeBanner.jsx'
+import SatisfactionSection from '../components/virtualOffice/SatisfactionSection.jsx'
+import VirtualOfficePricing from '../components/virtualOffice/VirtualOfficePricing.jsx'
 
 const VirtualOffice = () => {
    useEffect(() => {
