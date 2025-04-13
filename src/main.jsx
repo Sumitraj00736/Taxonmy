@@ -5,6 +5,10 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import Contactus from "./pages/Contactus.jsx";
 import CompanyRegistration from "./pages/CompanyRegistration.jsx";
+import ExpandingIntoIndiaBanner from "./components/ExpandingIndia/ExpandingIntoIndiaBanner.jsx";
+import Expandingintoindia from "./pages/Expandingintoindia.jsx";
+import VirtualOffice from "./pages/VirtualOffice.jsx";
+import Pricising from "./pages/Pricising.jsx";
 
 
 const router = createBrowserRouter([
@@ -24,7 +28,18 @@ const router = createBrowserRouter([
         path:"register-company",
         element: <CompanyRegistration />,
       },
-      
+      {
+        path:"expanding-into-india",
+        element: <Expandingintoindia/>,
+      },
+      {
+        path:"virtual-office",
+        element: <VirtualOffice/>,
+      },
+      {
+        path:"pricing",
+        element: <Pricising/>,
+      },
     ],
   },
 ]);

@@ -93,12 +93,13 @@ const Header = () => {
             {accountTaxOpen && (
               <div className="absolute left-0 mt-10 bg-white rounded-xl shadow-md w-56 z-50">
                 <Link
-                  to="/payroll"
+                  to="/income-tax"
                   className="block px-4 py-1 rounded-md hover:bg-gray-100 hover:underline"
                 >
-                  Payroll
+                  Income Tax
                 </Link>
                 <div className="border-t border-gray-300 my-2"></div>
+          
                 <Link
                   to="/gst"
                   className="block px-4 py-1 rounded-md hover:bg-gray-100 hover:underline"
@@ -106,27 +107,29 @@ const Header = () => {
                   GST
                 </Link>
                 <div className="border-t border-gray-300 my-2"></div>
-                <Link
-                  to="/income-tax"
-                  className="block px-4 py-1 rounded-md hover:bg-gray-100 hover:underline"
-                >
-                  Income Tax
-                </Link>
-                <div className="border-t border-gray-300 my-2"></div>
+                
                 <Link
                   to="/bookkeeping"
                   className="block px-4 py-1 rounded-md hover:bg-gray-100 hover:underline"
                 >
                   Bookkeeping
                 </Link>
+                <div className="border-t border-gray-300 my-2"></div>
+                <Link
+                  to="/payroll"
+                  className="block px-4 py-1 rounded-md hover:bg-gray-100 hover:underline"
+                >
+                  Payroll
+                </Link>
+                <div className="border-t border-gray-300 my-2"></div>
               </div>
             )}
           </div>
 
-          <Link to="/financial-services" className="hover:text-blue-500">
+          <Link to="/pricing" className="hover:text-blue-500">
             Pricing
           </Link>
-          <Link to="/contact" className="hover:text-blue-500">
+          <Link to="/company-info" className="hover:text-blue-500">
             Company Info
           </Link>
         </nav>
@@ -239,10 +242,10 @@ const Header = () => {
             </div>
           )}
 
-          <Link to="/financial-services" className="hover:text-blue-500">
+          <Link to="/pricing" className="hover:text-blue-500">
             Pricing
           </Link>
-          <Link to="/contact" className="hover:text-blue-500">
+          <Link to="/company-info" className="hover:text-blue-500">
             Company Info
           </Link>
 
